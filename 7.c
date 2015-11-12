@@ -63,6 +63,9 @@ void main()
 	{
 		p[i]=c[i-n2];
 	}
+	printf("Transmitted code : %s\n",p);
+	//give the above output(transmitted code itself) as input to (re enter code) get no error
+	//If an error has to occur change the above output and provide the input
 	printf("Re enter code\n");
 	scanf("%s",p);
 	crc();
