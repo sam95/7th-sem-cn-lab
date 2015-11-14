@@ -19,10 +19,11 @@ void main()
 		for(j=1;j<=n;j++)
 		{
 			scanf("%d",&a[i][j]);
-			s[i].dist[j]=a[i][j];
-			s[i].from[j]=j;
+			s[i].dist[j]=a[i][j];//read it as from i to j distance is a[i][j]
+			s[i].from[j]=j; // read it as from i to j next node is j
 		}
 	}
+	//remember floyd's algorithm? all pairs shortest path, apply the same logic!
 	for(k=1;k<=n;k++)
 	{
 		for(i=1;i<=n;i++)
