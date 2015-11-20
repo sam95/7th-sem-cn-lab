@@ -9,11 +9,11 @@ int gcd(int m,int n)
 {
 	int i,hcf;
 	for(i=1; i<=m || i<=n; ++i)
-    {
-        if(m%i==0 && n%i==0)
-            hcf=i;
-    }
-    return hcf;
+    	{
+        	if(m%i==0 && n%i==0)
+                hcf=i;
+    	}
+    	return hcf;
 }
 
 int modexp(int x,int y,int z)
