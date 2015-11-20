@@ -29,8 +29,11 @@ void main()
 	
 	int p,q,n,z,e,d,i,asca[50];
 	
-	printf("Enter messade\n");
+	// Provide input say (HELLO)
+	printf("Enter message\n");
 	scanf("%s",am);
+	
+	//Provide input say (3 11) 
 	printf("Enter p and q\n");
 	scanf("%d%d",&p,&q);
 	n=p*q;
@@ -38,6 +41,7 @@ void main()
 	
 	for(;;)
 	{
+		//Provide input say (7)
 		printf("Enter value of e\n");
 		scanf("%d",&e);
 		if(gcd(e,z)==1)
