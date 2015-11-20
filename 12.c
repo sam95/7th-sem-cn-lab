@@ -47,8 +47,8 @@ void main()
 	while(count!=0)
 	{
 		drop=0;
-        snt=min(count,op);
-        count=count-snt;
-        printf("%d\t0\t\t%d\t%d\t%d\n",i++,snt,drop,count);
+                snt=min(count,op);
+                count=count-snt;
+                printf("%d\t0\t\t%d\t%d\t%d\n",i++,snt,drop,count);
 	}
 }
