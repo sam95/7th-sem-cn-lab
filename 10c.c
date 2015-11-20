@@ -8,7 +8,7 @@ char client[10]="clientfifo";
 
 void main()
 {
-	char filename[10],data[200],cc[1000];
+	char filename[10],data[200];
 	int n,i,fd1;
 	FILE *fd2;	
 	
