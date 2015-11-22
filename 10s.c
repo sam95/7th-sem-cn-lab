@@ -39,3 +39,12 @@ void main()
 		printf("server closing\n");
 	}
 }
+/* Open terminal
+ * Create extra terminal on the same window (ctrl+Shift+t)
+ * In terminal-1 (cc 10s.c) and (./a.out). See the waiting message?
+ * Now In terminal-2 (cc 10c.c) and (./a.out)
+ * Enter an existing file name which has content
+ * Wait for the server to process the request and transfer data to client
+ * Client prints your file contents!
+ * Always compile it before executing 
+*/ 
