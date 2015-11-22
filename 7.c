@@ -5,7 +5,7 @@
 //Change the 16 bit polynomial to the required value, Below is a considered value
 // For test provide 1101 as input 
 
-char g[]="10001000000100001",p[50],c[50];
+char g[]="1000100000010001",p[50],c[50];
 int n1,n2;
 
 void xor()
@@ -52,14 +52,14 @@ void main()
 	scanf("%s",p);
 	n1=strlen(g);
 	n2=strlen(p);
-	for(i=n2;i<n2+n1-1;i++)
+	for(i=n2;i<n2+n1;i++)
 	{
 		p[i]='0';
 	}
 	crc();
 	printf("Checksum : %s\n",p);
 	printf("Current code : %s\n",g);
-	for(i=n2;i<n2+n1-1;i++)
+	for(i=n2;i<n2+n1;i++)
 	{
 		p[i]=c[i-n2];
 	}
@@ -73,7 +73,7 @@ void main()
 	{
 		if(c[i]=='1')
 		{
-			printf("Error at %d\n",i+1);
+			printf("Error at %d\n",n2+i+1);
 			exit(0);
 		}
 	}
