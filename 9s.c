@@ -46,8 +46,8 @@ void main()
 }
 /* Open terminal
  * Create extra terminal on the same window (ctrl+Shift+t)
- * In terminal-1 (gcc 9s.c -o 9s.out) and (./9s.out). See the waiting message?
- * Now In terminal-2 (gcc 9c.c -o 9c.out) and (./9c.out)
+ * In terminal-1 (cc 9s.c) and (./a.out). See the waiting message?
+ * Now In terminal-2 (cc 9c.c) and (./a.out)
  * Enter an existing file name which has content
  * Wait for the server to process the request and transfer data to client
  * Client prints your file contents!
