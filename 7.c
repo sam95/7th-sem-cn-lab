@@ -73,9 +73,17 @@ void main()
 	{
 		if(c[i]=='1')
 		{
-			printf("Error at %d\n",n2+i+1);
+			printf("Error");
+			// If error at position is to be determined then use the below if, otherwise skip it.
+			if(i>n2)
+			{
+				printf("  %d\n",n2+i+1);
+			}
+			else
+			{
+				printf("  %d\n",i)
+			}
 			exit(0);
-		}
 	}
 	printf("no error\n");
 }
