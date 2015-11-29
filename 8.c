@@ -9,7 +9,7 @@ struct node
 
 void main()
 {
-	int a[15][15],n=0,i,j,k;
+	int a[15][15],n=0,i,j,k,count;
 	struct node s[10];
 	printf("enter number of nodes\n");
 	scanf("%d",&n);
@@ -24,20 +24,25 @@ void main()
 		}
 	}
 	//remember floyd's algorithm? all pairs shortest path, apply the same logic!
-	for(k=1;k<=n;k++)
+	do
 	{
-		for(i=1;i<=n;i++)
+		count=0;
+		for(k=1;k<=n;k++)
 		{
-			for(j=1;j<=n;j++)
+			for(i=1;i<=n;i++)
 			{
-				if(s[i].dist[j] > a[i][k] + s[k].dist[j])
+				for(j=1;j<=n;j++)
 				{
-					s[i].dist[j] = a[i][k] + s[k].dist[j];
-					s[i].from[j]=k;
+					if(s[i].dist[j] > a[i][k] + s[k].dist[j])
+					{
+						s[i].dist[j] = a[i][k] + s[k].dist[j];
+						s[i].from[j]=k;
+						count++;
+					}
 				}
 			}
 		}
-	}
+	}while(count!=0);
 	for(i=1;i<=n;i++)
 	{
 		for(j=1;j<=n;j++)
