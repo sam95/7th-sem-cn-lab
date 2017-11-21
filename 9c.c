@@ -15,7 +15,7 @@ void main()
 	server.sin_port=htons(serverport);
 	server.sin_addr.s_addr=htonl(INADDR_ANY);
 	connect(sd,(struct sockaddr *)&server,sizeof(server));
-	printf("enter path\n");
+	printf("enter file name\n");
 	scanf("%s",filename);
 	write(sd,filename,50);
 	n=read(sd,buf,1500);
